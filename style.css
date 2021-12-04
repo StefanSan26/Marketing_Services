@@ -223,7 +223,7 @@ header {
 }
 .hero__cover::before{
 	content: "";
-	background-image: url('./images/glen-ardi-ljXFGnvmlno-unsplash-large.jpg');
+	background-image: url('./images/hero-large.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position-y: center;
@@ -243,15 +243,15 @@ header {
 	margin: 0;
 }
 /* =========contact Me  Section========= */ 
-.contact{
-	height: 200px;
+.hire{
+	height: 600px;
 	background-color: var(--first-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
-.contact__text{
+.hire__text{
 	color: var(--white);
 }
 .contact__btn{
@@ -274,23 +274,24 @@ header {
 }
 
 /* =========Hire Section========= */ 
-.hire{
+/* .hire{
 	height: 600px;
-}
+} */
 .hire__cover{
 	text-align: center;
-	/* background-image: url('./images/pexels-jess-loiterton-medium1.jpg'); */
-	height: 100%;
-	color: var(--black);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	position: relative;
+	margin: 0 20%;
+	/* background-image: url('./images/pexels-jess-loiterton-medium1.jpg'); */
+	/* height: 100%;
+	color: var(--black);
+	position: relative; */
 }
-.hire__cover::before{
+/* .hire__cover::before{
 	content: "";
 	position: absolute;
-	background-image: url('./images/mateo-fernandez-unsplash-large2.jpg');
+	background-image: url('./images/hero2-large.jpg');
 	background-size: cover;
 	background-position: top;
 	position: absolute;
@@ -299,11 +300,12 @@ header {
 	bottom: 0px;
 	left: 0px;
 
-}
+} */
 .hire__cover h2, .hire__cover p{
 	color: var(--white);
-	z-index: 1;
-	padding: 0 20%;
+	
+	/* z-index: 1; */
+	/* padding: 0 20%; */
 }
 
 /* =========Main Section========= */ 
