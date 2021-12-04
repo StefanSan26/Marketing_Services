@@ -1,0 +1,229 @@
+
+:root {
+  --header-height: 10rem;
+  /* =====================Colors======================= */
+  --hue-color: 218; /*Purple:250 - Green:142 - Blue:230 - Pink:340*/
+
+  --first-color: hsl(var(--hue-color), 58%, 21%);
+  /* --first-color-secondary: hsl(218, 58%, 21%); */
+	--text-color:hsl(218, 58%, 21%);
+  --contrast-color: hsl(31, 47%, 42%);
+  --black: hsl(var(--hue-color), 10%, 5%);
+  --white: #F8F5EC;
+  /* --white-hover: hsl(232, 55%, 83%); */
+
+  /* ============Font and Typografy============= */
+  /* --title-font: 'Sanchez',sans-serif; */
+  /* --text-font:  'Quicksand', sans-serif;
+  --system-font: -apple-system, linkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+    sans-serif; */
+    --primary-font: 'Goldenbook',serif;
+    /* --primary-font-family-short: Goldenbook; */
+    --secondary-font: Montserrat,sans-serif;
+    --text-font: Montserrat,sans-serif;
+    /* --secondary-font-family-short: Montserrat; */
+    --body-padding: 0px;
+    --background-color: #F8F5EC;
+    --normal-font-size: 16px;
+    --little-font-size: 12px;
+    --h1-font-size: 70px;
+    --h2-font-size: 43px;
+    --h3-font-size: 30px;
+    --h4-font-size: 21px;
+    --h5-font-size: 17px;
+    --h6-font-size: 16px;
+    --section-padding: 96px;
+
+
+  /* --big-font-size: 7rem;
+  --h1-font-size: 5rem;
+  --h2-font-size: 4rem;
+  --h3-font-size: 3rem;
+  --h4-font-size: 2.5rem;
+  --normal-font-size: 1.6rem; */
+
+
+  /* =========Font size for large devices========= */
+
+  /* @media screen and (min-width: 768px) {
+    :root {
+      --big-font-size: 10rem;
+      --h1-font-size: 7rem;
+      --h2-font-size: 6rem;
+      --h3-font-size: 5rem;
+      --h4-font-size: 3.5rem;
+      --normal-font-size: 1.8rem;
+    }
+  } */
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+body{
+	margin: 0;
+	padding: 0;
+
+}
+
+/* =========BASE========= */
+
+h2,
+h3,
+h4 {
+  font-family: var(--text-font);
+}
+h1 {
+  font-family: var(--primary-font);
+  font-size: var(--h1-font-size);
+  /* margin-top: 3rem;
+  font-weight: 500; */
+}
+h2 {
+  font-size: var(--h2-font-size);
+  /* font-weight: 300;
+  margin-top: 1rem; */
+}
+h3 {
+  /* font-weight: 400; */
+  font-size: var(--h3-font-size);
+}
+h4 {
+  font-size: var(--h4-font-size);
+  /* color: var(--black); */
+}
+p {
+  font-size: var(--normal-font-size);
+  font-family: var(--text-font);
+  /* line-height: 4rem; */
+}
+ul {
+  list-style: none;
+  color: var(--text-color);
+	margin: 0;
+	padding: 0;
+}
+li {
+  color: var(--white);
+}
+a {
+  text-decoration: none;
+}
+header a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--text-font);
+}
+/* =========Header========= */
+header {
+  height: var(--header-height);
+  background-color: var(--first-color);
+  /* margin-bottom: 3rem; */
+  /* position: fixed; */
+  top: 0px;
+  width: 100%;
+	display: flex;
+}
+.navbar{
+	display: inline-flex;
+	/* position: static; */
+	width: 100vw;
+}
+.logo{
+	display: inline-block;
+
+}
+.logo__img{
+	width: 29rem;
+	margin: 3rem;
+}
+.dark{
+	display: none;
+}
+
+.navigation__menu {
+	height: var(--header-height);
+	width: 100%;
+	/* position: static; */
+	/* margin-left: 40%; */
+	transition: 0s;
+}
+.navigation__list {
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	font-size: 2rem;
+	align-items: center;
+	text-transform: uppercase;
+}
+.navigation__open {
+	display: none;
+}
+.uil{
+	display: none;
+}
+
+
+/* .show {
+  right: 0vw;
+} */
+
+.navigation__list .navigation__item {
+  font-size: var(--little-font-size);
+  margin: auto;
+}
+.navigation__open {
+  font-size: var(--h3-font-size);
+  color: var(--white);
+  position: absolute;
+	top: 1rem;
+  right: 2rem;
+  display: inline-block;
+}
+.navigation__item{
+	font-weight: 600;
+
+}
+.navigation__link:hover, .bx:hover{
+	color: var(--white-hover);
+}
+
+.sub-nav__item{
+	display: none;
+}
+
+/*==Menu Open==*/
+
+/* =========Main========= */
+
+
+
+/* =========Hero Section========= */ 
+.hero{
+	height: 70vh;
+}
+.hero__cover{
+	text-align: center;
+	background-image: url('./images/pexels-jess-loiterton-medium1.jpg');
+	height: 100%;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero__title{
+	/* padding-top: 5rem; */
+	margin: 0;
+}
+/* =========Hire Section========= */ 
+/* =========Advertising Section========= */ 
+/* =========Expert-Content Section========= */ 
+/* =========SEO Section========= */ 
+/* =========Social Media Section========= */ 
+/* =========IPE Section========= */ 
+/* =========Know me Section========= */ 
+/* =========Work with me Section========= */ 
