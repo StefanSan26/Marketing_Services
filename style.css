@@ -203,9 +203,7 @@ header {
 	display: none;
 }
 
-/*==Menu Open==*/
 
-/* =========Main========= */
 
 
 
@@ -223,7 +221,7 @@ header {
 }
 .hero__cover::before{
 	content: "";
-	background-image: url('./images/hero-large.jpg');
+	background-image: url('https://i.ibb.co/5Rhbnp6/hero-large.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position-y: center;
