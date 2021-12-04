@@ -26,7 +26,7 @@
     --body-padding: 0px;
     --background-color: #F8F5EC;
     --normal-font-size: 16px;
-    --little-font-size: 12px;
+    --little-font-size: 14px;
     --h1-font-size: 70px;
     --h2-font-size: 43px;
     --h3-font-size: 30px;
@@ -97,7 +97,7 @@ h4 {
 p {
   font-size: var(--normal-font-size);
   font-family: var(--text-font);
-  /* line-height: 4rem; */
+  line-height: 3rem;
 }
 ul {
   list-style: none;
@@ -123,13 +123,14 @@ header {
   /* margin-bottom: 3rem; */
   /* position: fixed; */
   top: 0px;
-  width: 100%;
+  /* width: 100vw; */
 	display: flex;
+	padding: 0 20px;
 }
 .navbar{
 	display: inline-flex;
 	/* position: static; */
-	width: 100vw;
+	width: 100%;
 }
 .logo{
 	display: inline-block;
@@ -185,7 +186,7 @@ header {
   display: inline-block;
 }
 .navigation__item{
-	font-weight: 600;
+	font-weight: 700;
 
 }
 .navigation__link:hover, .bx:hover{
@@ -204,23 +205,103 @@ header {
 
 /* =========Hero Section========= */ 
 .hero{
-	height: 70vh;
+	height: 500px;
 }
 .hero__cover{
 	text-align: center;
-	background-image: url('./images/pexels-jess-loiterton-medium1.jpg');
+	position: relative;
 	height: 100%;
-	color: var(--white);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+.hero__cover::before{
+	content: "";
+	background-image: url('./images/glen-ardi-ljXFGnvmlno-unsplash-large.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	opacity: 0.4;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+}
+.hero__cover h1, .hero__cover h4{
+	color: var(--black);
+	z-index: 1;
 }
 .hero__title{
 	/* padding-top: 5rem; */
 	margin: 0;
 }
+/* =========contact Me  Section========= */ 
+.contact{
+	height: 200px;
+	background-color: var(--first-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact__text{
+	color: var(--white);
+}
+.contact__btn{
+	color: var(--white);
+	/* background-color: var(--first-color); */
+	/* opacity: 0; */
+	background: none;
+	/* color: inherit; */
+	border: var(--white) 2px solid;
+	padding: 1rem;
+	height: 5rem;
+	font-size: var(--h4-font-size);
+	/* font: inherit; */
+	cursor: pointer;
+	/* outline: var(--white) 2px; */
+}
+.contact__btn:hover{
+	background-color: var(--white);
+	color: var(--black);
+}
+
 /* =========Hire Section========= */ 
+.hire{
+	height: 500px;
+}
+.hire__cover{
+	text-align: center;
+	/* background-image: url('./images/pexels-jess-loiterton-medium1.jpg'); */
+	height: 100%;
+	color: var(--black);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+.hire__cover::before{
+	content: "";
+	position: absolute;
+	background-image: url('./images/mateo-fernandez-unsplash-large2.jpg');
+	background-size: cover;
+	background-position: top;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+
+}
+.hire__cover h2, .hire__cover p{
+	color: var(--white);
+	z-index: 1;
+	padding: 0 20%;
+}
+
 /* =========Advertising Section========= */ 
+
 /* =========Expert-Content Section========= */ 
 /* =========SEO Section========= */ 
 /* =========Social Media Section========= */ 
