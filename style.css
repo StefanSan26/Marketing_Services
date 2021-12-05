@@ -5,26 +5,18 @@
   --hue-color: 218; /*Purple:250 - Green:142 - Blue:230 - Pink:340*/
 
   --first-color: hsl(var(--hue-color), 58%, 21%);
-  /* --first-color-secondary: hsl(218, 58%, 21%); */
-	/* --text-color:hsl(218, 58%, 21%); */
+
   --contrast-color: hsl(31, 47%, 42%);
   --black: hsl(var(--hue-color), 10%, 5%);
   --white: #F8F5EC;
-  /* --white-hover: hsl(232, 55%, 83%); */
 
-  /* ============Font and Typografy============= */
-  /* --title-font: 'Sanchez',sans-serif; */
-  /* --text-font:  'Quicksand', sans-serif;
-  --system-font: -apple-system, linkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif; */
     --primary-font: 'Goldenbook',serif;
-    /* --primary-font-family-short: Goldenbook; */
+
     --secondary-font: Montserrat,sans-serif;
     --text-font: Montserrat,sans-serif;
-    /* --secondary-font-family-short: Montserrat; */
+
     --body-padding: 0px;
-    /* --background-color: #F8F5EC; */
+
     --normal-font-size: 16px;
     --little-font-size: 14px;
     --h1-font-size: 70px;
@@ -36,26 +28,7 @@
     --section-padding: 96px;
 
 
-  /* --big-font-size: 7rem;
-  --h1-font-size: 5rem;
-  --h2-font-size: 4rem;
-  --h3-font-size: 3rem;
-  --h4-font-size: 2.5rem;
-  --normal-font-size: 1.6rem; */
 
-
-  /* =========Font size for large devices========= */
-
-  /* @media screen and (min-width: 768px) {
-    :root {
-      --big-font-size: 10rem;
-      --h1-font-size: 7rem;
-      --h2-font-size: 6rem;
-      --h3-font-size: 5rem;
-      --h4-font-size: 3.5rem;
-      --normal-font-size: 1.8rem;
-    }
-  } */
 }
 
 html{
@@ -78,17 +51,15 @@ h4 {
 h1 {
   font-family: var(--primary-font);
   font-size: var(--h1-font-size);
-  /* margin-top: 3rem;
-  font-weight: 500; */
+
 }
 h2 {
   font-size: var(--h2-font-size);
   font-family: var(--primary-font);
   font-weight: 100;
-  /* margin-top: 1rem; */
+
 }
 h3 {
-  /* font-weight: 400; */
   font-size: var(--h3-font-size);
 	font-family: var(--primary-font);
 	text-decoration: underline;
@@ -97,7 +68,7 @@ h3 {
 }
 h4 {
   font-size: var(--h4-font-size);
-  /* color: var(--black); */
+
 }
 p {
   font-size: var(--normal-font-size);
@@ -126,10 +97,9 @@ header a {
 header {
   height: var(--header-height);
   background-color: var(--first-color);
-  /* margin-bottom: 3rem; */
-  /* position: fixed; */
+
   top: 0px;
-  /* width: 100vw; */
+
 	display: flex;
 	padding: 0 20px;
 }
@@ -153,8 +123,6 @@ header {
 .navigation__menu {
 	height: var(--header-height);
 	width: 100%;
-	/* position: static; */
-	/* margin-left: 40%; */
 	transition: 0s;
 }
 .navigation__list {
@@ -221,10 +189,11 @@ header {
 }
 .hero__cover::before{
 	content: "";
-	background-image: url('https://i.ibb.co/5Rhbnp6/hero-large.jpg');
+	/* background-image: url('https://i.ibb.co/5Rhbnp6/hero-large.jpg'); */
+	background-image: url('https://i.postimg.cc/DZH75KPQ/pavan-trikutam-po-Nsj-vya34-large.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
-	background-position-y: center;
+	background-position-y: top;
 	opacity: 0.4;
 	top: 0px;
 	right: 0px;
@@ -271,39 +240,19 @@ header {
 	color: var(--black);
 }
 
-/* =========Hire Section========= */ 
-/* .hire{
-	height: 600px;
-} */
+
 .hire__cover{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 20%;
-	/* background-image: url('./images/pexels-jess-loiterton-medium1.jpg'); */
-	/* height: 100%;
-	color: var(--black);
-	position: relative; */
+	margin: 0 25%;
+	
 }
-/* .hire__cover::before{
-	content: "";
-	position: absolute;
-	background-image: url('./images/hero2-large.jpg');
-	background-size: cover;
-	background-position: top;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
 
-} */
 .hire__cover h2, .hire__cover p{
 	color: var(--white);
 	
-	/* z-index: 1; */
-	/* padding: 0 20%; */
 }
 
 /* =========Main Section========= */ 
@@ -325,9 +274,6 @@ header {
 	width: 600px;	
 }
 .main__text{
-	/* text-align: justify; */
-	/* height: 400px;
-	width: 600px; */
 	padding: 40px;
 }
 .section{
@@ -346,11 +292,9 @@ header {
 	
 }
 .advertising__text{
-	/* text-align: center; */
 	height: 400px;
 	width: 600px;
 	text-align: end;
-	/* padding: 40px; */
 }
 
 /* =========Expert-Content Section========= */ 
@@ -416,16 +360,6 @@ header {
 	width: 600px;
 	text-align: start;
 }
-/* =========Work with me Section========= */ 
-/* .work-me{
-	grid-column: 1 / 3;
-	grid-row: 7 / 8;
-	background-color: var(--first-color);
-	flex-direction: row;
-}.work-me__text{
-	height: 400px;
-	width: 600px;
-} */
 
  /* =========Footer========= */ 
 footer{
